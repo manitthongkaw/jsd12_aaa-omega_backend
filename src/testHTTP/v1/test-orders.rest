@@ -10,28 +10,19 @@ GET {{baseUrl}}/number/ord20260020
 GET {{baseUrl}}/6a2043afa2ff2809e35c8bf7
 
 ### Create a new order
-@creteNumber = 30
+@creteNumber = 35
 POST {{baseUrl}}
 Content-Type: application/json
 
 {
-  "totalPrice": 13900,
+  "totalPrice": 0,
   "customer": {
-    "userNumber": 1001,
-    "firstName": "สมชาย",
-    "lastName": "ใจดี {{creteNumber}}",
-    "company": null,
-    "taxId": null,
-    "phone": "0812345678",
-    "phone2": "0898765432",
-    "email": "somchai@example.com",
+    "firstName": "Star{{creteNumber}}",
+    "lastName": "(O_o)i",
+    "phone": "0000000000",
+    "email": "aaa-{{creteNumber}}@mail.com",
     "shippingAddress": {
-      "label": "บ้าน",
-      "addressLine": "123/45",
-      "subdistrict": "บางนา",
-      "district": "บางนา",
-      "province": "กรุงเทพมหานคร",
-      "postcode": "10260"
+      "addressLine": "@ {{creteNumber}}"
     }
   },
   "items": [
@@ -39,7 +30,7 @@ Content-Type: application/json
       "productNumber": 2,
       "name": "Hybrid Inverter 5kW",
       "sku": "INV-5KW-HY",
-      "priceAtPurchase": 13900,
+      "priceAtPurchase": 0,
       "quantity": 1
     }
   ]
