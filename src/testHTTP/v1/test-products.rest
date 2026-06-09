@@ -4,107 +4,20 @@
 GET {{baseUrl}}
 
 ### Create a new product
-@creteNumber = 33
+@creteNumber = 42
 POST {{baseUrl}}
 Content-Type: application/json
 
 {
-  "name": "Solar Panel Mono 550W High Efficiency 2",
+  "name": "ArM TeSt {{creteNumber}}",
   "sku": "sku-text-{{creteNumber}}",
-  "brand": "test 2",
   "category": "solar",
   "warranty": 1,
   "description": "description {{creteNumber}}",
-  "specs": [
-    {
-      "label": "รุ่น (Model)",
-      "value": "SUN2000-5K-LC0"
-    },
-    {
-      "label": "กำลังไฟฟ้าสูงสุด (Max. Output Power)",
-      "value": "5,000 W"
-    },
-    {
-      "label": "ประสิทธิภาพสูงสุด (Max. Efficiency)",
-      "value": "98.4%"
-    },
-    {
-      "label": "แรงดันขาเข้าสูงสุด (Max. Input Voltage)",
-      "value": "600 V"
-    },
-    {
-      "label": "จำนวน MPPT (Number of MPPT)",
-      "value": "2"
-    },
-    {
-      "label": "กระแสสูงสุดต่อ MPPT (Max. Current per MPPT)",
-      "value": "12.5 A"
-    },
-    {
-      "label": "แรงดันไฟฟ้าเริ่มต้น (Start-up Voltage)",
-      "value": "100 V"
-    },
-    {
-      "label": "ประเภทระบบไฟฟ้า (Grid Connection)",
-      "value": "Single Phase (1 Phase)"
-    },
-    {
-      "label": "มาตรฐานการป้องกัน (Protection Degree)",
-      "value": "IP65 (กันน้ำกันฝุ่นติดตั้งภายนอกได้)"
-    },
-    {
-      "label": "ระบบระบายความร้อน (Cooling)",
-      "value": "Natural Convection (ไร้เสียงรบกวน)"
-    },
-    {
-      "label": "การเชื่อมต่อ (Communication)",
-      "value": "WLAN / Fast Ethernet / 4G (Optional)"
-    },
-    {
-      "label": "น้ำหนัก (Weight)",
-      "value": "12.0 kg"
-    },
-    {
-      "label": "ขนาด (Dimensions)",
-      "value": "365 x 365 x 156 mm"
-    },
-    {
-      "label": "ฟังก์ชันความปลอดภัย",
-      "value": "AI-Powered AFCI (ป้องกันไฟไหม้)"
-    },
-    {
-      "label": "มาตรฐานรองรับ",
-      "value": "MEA / PEA ผ่านการรับรอง"
-    }
-  ],
-  "features": [
-    "เทคโนโลยี AI-Powered ช่วยวิเคราะห์และตัดวงจรเมื่อเกิด Arc ได้แม่นยำภายใน 0.5 วินาที",
-    "รองรับ Optimizer เพื่อเพิ่มประสิทธิภาพการผลิตไฟรายแผง (กรณีมีเงาบัง)",
-    "ขนาดกะทัดรัด ติดตั้งง่าย ประหยัดพื้นที่",
-    "Built-in ระบบกันไฟย้อน (Zero Export) เมื่อใช้งานคู่กับ Smart Power Sensor",
-    "ดูข้อมูลผ่านแอป FusionSolar ได้แบบ Real-time ทุกที่ทั่วโลก",
-    "ทนทานต่อสภาพอากาศเมืองไทยด้วยวัสดุกันการกัดกร่อนคุณภาพสูง"
-  ],
   "image": {
     "url": "https://placehold.co/600x600?text=P-{{creteNumber}}",
     "cloudinaryId": "Product 1"
   },
-  "gallery": [
-    {
-      "url": "https://placehold.co/600x600?text=P-{{creteNumber}}-1",
-      "cloudinaryId": "{{creteNumber}}-1"
-    },
-    {
-      "url": "https://placehold.co/600x600?text=P-{{creteNumber}}-2",
-      "cloudinaryId": "{{creteNumber}}-2"
-    }
-  ],
-  "tags": [
-    "solar",
-    "mono",
-    "550w",
-    "high-efficiency"
-  ],
   "price": 26950,
   "salePrice": 26250,
   "stock": 2120,
