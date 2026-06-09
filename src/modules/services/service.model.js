@@ -40,7 +40,7 @@ const serviceSchema = new mongoose.Schema({
   timestamps:true
 });
 
-serviceSchema.pre("save", async function () {d
+serviceSchema.pre("save", async function () {
   if (!this.serviceNumber) {
     const year = new Date().getFullYear();
     const seq = await getNextSequence(`service_${year}`);

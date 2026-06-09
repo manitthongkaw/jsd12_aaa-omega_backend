@@ -67,6 +67,7 @@ export const updateServiceStatus = async (req, res, next) => {
   }
 };
 
+/*
 export const updateServiceInternalNote = async (req, res, next) => {
   try {
     const { internalNote } = req.body;
@@ -79,6 +80,7 @@ export const updateServiceInternalNote = async (req, res, next) => {
     next(error);
   }
 };
+*/
 
 export const deleteService = async (req, res, next) => {
   try {
@@ -86,7 +88,7 @@ export const deleteService = async (req, res, next) => {
     if (!service) {
       return res.status(404).json({ success: false, error: "Service not found" });
     };
-    return res.status(200).json({ success: true, message: "Service deleted successfully" });
+    return res.status(200).json({ success: true, data: true, message: "Service deleted successfully" });
   } catch (error) {
     next(error);
   };

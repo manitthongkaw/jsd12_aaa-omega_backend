@@ -8,7 +8,7 @@ Content-Type: application/json
   "firstName": "Customer Test",
   "lastName": "The VIP (O_oi)",
   "phone": "0999999999",
-  "email": "customer@aaaomega.com",
+  "email": "customer6@aaaomega.com",
   "password": "aaaomega"
 }
 
