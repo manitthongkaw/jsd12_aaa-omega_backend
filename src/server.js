@@ -10,6 +10,8 @@ import { limiter } from "./middlewares/rateLimit.js";
 
 const app = express();
 
+app.set('trust proxy', 1 /* number of proxies between user and server */)
+
 const isProd = process.env.NODE_ENV === "production";
 
 app.use(helmet());
